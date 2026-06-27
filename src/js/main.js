@@ -535,7 +535,7 @@ function inicializarAdminUsuarios() {
 
         usuarios.push({ run, nombre, apellidos, rol, email, direccion, fecha });
         localStorage.setItem(STORAGE_USERS_KEY, JSON.stringify(usuarios));
-        mostrarFeedback(successBox, 'Usuario registrado exitosamente.');
+        mostrarFeedback(successBox, 'Usuario registrado exitosamente');
         form.reset();
         renderizarTablaUsuarios();
     });
