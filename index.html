@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertoHogar | Del campo a tu mesa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+
+<header class="main-header">
+    <a href="index.html" class="logo-link"><img src="src/assets/logo.jpg" alt="Logo HuertoHogar" class="logo-img"> <span class="logo-text">HuertoHogar</span></a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="src/components/nosotros.html">Nosotros</a></li>
+            <li><a href="src/components/productos.html">Productos</a></li>
+            <li><a href="src/components/blog.html">Blog</a></li>
+            <li><a href="src/components/contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <a href="src/components/login.html" id="link-login">Ingresar</a>
+        <a href="src/components/registro.html" id="link-registro">Registro</a>
+        <div id="user-info" style="display:none;align-items:center;gap:1rem;">
+            <span id="user-name" style="font-weight:600;font-size:0.9rem;color:var(--accent-green);"></span>
+            <button id="btn-logout" style="background:none;border:1px solid #ccc;padding:0.4rem 1rem;border-radius:6px;cursor:pointer;font-size:0.85rem;font-weight:600;">Salir</button>
+        </div>
+        <a href="src/components/carrito.html" class="btn-cart">🛒 <span class="cart-badge" id="cart-count">0</span></a>
+    </div>
+</header>
+
+<main>
+    <section class="hero hero-index">
+        <div class="hero-content">
+            <h2>Del Campo Chileno<br>Directo a tu Mesa</h2>
+            <p>Productos frescos, naturales y de temporada. Apoyamos a agricultores locales para llevar lo mejor de la tierra a tu hogar.</p>
+            <a href="src/components/productos.html" class="btn-primary">Ver Cosecha de Hoy</a>
+            <div class="hero-badges">
+                <span class="badge">🌱 100% Natural</span>
+                <span class="badge">🚚 Despacho Gratis en RM</span>
+                <span class="badge">🤝 Agricultores Locales</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="features-strip">
+        <div class="feature-item">✅ Sin intermediarios</div>
+        <div class="feature-item">🌿 Productos orgánicos</div>
+        <div class="feature-item">📦 Despacho a todo Chile</div>
+        <div class="feature-item">⭐ Calidad garantizada</div>
+    </div>
+
+    <section class="products-section">
+        <h2 class="section-title">Productos Destacados</h2>
+        <p class="section-subtitle">Lo mejor de nuestra cosecha, seleccionado para ti</p>
+        <div class="filters-bar">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="frutas">Frutas</button>
+            <button class="filter-btn" data-filter="verduras">Verduras</button>
+            <button class="filter-btn" data-filter="organicos">Orgánicos</button>
+            <button class="filter-btn" data-filter="lacteos">Lácteos</button>
+        </div>
+        <div id="product-container" class="product-grid"></div>
+    </section>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <div class="footer-logo"><img src="src/assets/logo.jpg" alt="Logo HuertoHogar" style="height:36px;border-radius:50%;vertical-align:middle;margin-right:0.5rem;"><span class="logo-text">HuertoHogar</span></div>
+            <p>Conectamos lo mejor del campo chileno con tu hogar. Productos frescos, naturales y de temporada, directo del agricultor a ti.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="src/components/nosotros.html">Nosotros</a></li>
+                <li><a href="src/components/productos.html">Productos</a></li>
+                <li><a href="src/components/blog.html">Blog</a></li>
+                <li><a href="src/components/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Mi Cuenta</h4>
+            <ul>
+                <li><a href="src/components/registro.html">Registrarse</a></li>
+                <li><a href="src/components/login.html">Iniciar Sesión</a></li>
+                <li><a href="src/components/carrito.html">Mi Carrito</a></li>
+                <li><a href="src/components/admin_home.html">Admin</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 HuertoHogar. Todos los derechos reservados. Desarrollado con ❤️ y Vanilla JS.</p>
+    </div>
+</footer>
+
+<script src="src/js/main.js"></script>
+</body>
+</html>

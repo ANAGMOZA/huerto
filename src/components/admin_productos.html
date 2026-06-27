@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertoHogar | Productos Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="admin-body">
+<div class="admin-layout">
+    <aside class="admin-sidebar">
+        <div class="sidebar-header">
+            <img src="../../src/assets/logo.jpg" alt="Logo" style="height:40px;border-radius:50%;margin-bottom:0.5rem;">
+            <div class="logo-text" style="color:#fff;font-size:1.2rem;">HuertoHogar</div>
+            <span class="badge-admin-pill">Administrador</span>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="admin_home.html">🏠 Inicio Admin</a></li>
+                <li><a href="admin_productos.html" class="active-sidebar">📦 Mantenedor Productos</a></li>
+                <li><a href="admin_usuarios.html">👥 Mantenedor Usuarios</a></li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="../../index.html" class="btn-back-store">⬅ Volver a la Tienda</a>
+            <button id="btn-logout" onclick="cerrarSesion()" style="margin-top:0.8rem;width:100%;background:rgba(255,0,0,0.15);border:1px solid rgba(255,100,100,0.4);color:#ffaaaa;padding:0.6rem;border-radius:6px;cursor:pointer;font-size:0.85rem;font-weight:600;">🔒 Cerrar Sesión</button>
+        </div>
+    </aside>
+
+    <main class="admin-content">
+        <header class="admin-topbar">
+            <h2>Gestión de Productos</h2>
+            <span class="admin-user">👤 Admin HuertoHogar</span>
+        </header>
+        <div class="admin-panel">
+            <div class="admin-card">
+                <div class="admin-card-header"><h3>Registrar Nuevo Producto</h3></div>
+                <div class="admin-form">
+                    <div id="prod-error-msg" class="error-box hidden"></div>
+                    <div id="prod-success-msg" class="success-box hidden"></div>
+                    <form id="admin-product-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prod-codigo">Código de Producto</label>
+                                <input type="text" id="prod-codigo" placeholder="Ej: FR004" required>
+                                <small>Mín. 3 caracteres (Ej: FR001, VR002)</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="prod-nombre">Nombre del Producto</label>
+                                <input type="text" id="prod-nombre" placeholder="Ej: Tomates Cherry" maxlength="100" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="prod-categoria">Categoría</label>
+                                <select id="prod-categoria" required>
+                                    <option value="">Selecciona categoría</option>
+                                    <option value="frutas">Frutas</option>
+                                    <option value="verduras">Verduras</option>
+                                    <option value="organicos">Orgánicos</option>
+                                    <option value="lacteos">Lácteos</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prod-precio">Precio (CLP)</label>
+                                <input type="number" id="prod-precio" placeholder="Ej: 1500" min="0" step="0.01" required>
+                                <small>Mín: $0 (producto gratis)</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="prod-stock">Stock</label>
+                                <input type="number" id="prod-stock" placeholder="Ej: 50" min="0" step="1" required>
+                                <small>Solo números enteros</small>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prod-stock-critico">Stock Crítico <span style="color:#999;font-size:0.8rem;">(Opcional)</span></label>
+                                <input type="number" id="prod-stock-critico" placeholder="Ej: 5" min="0" step="1">
+                                <small>Alerta cuando el stock llegue a este valor</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="prod-imagen">URL Imagen <span style="color:#999;font-size:0.8rem;">(Opcional)</span></label>
+                                <input type="text" id="prod-imagen" placeholder="https://... o ruta local">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="prod-descripcion">Descripción <span style="color:#999;font-size:0.8rem;">(Opcional, máx 500)</span></label>
+                            <textarea id="prod-descripcion" rows="3" placeholder="Descripción del producto..." maxlength="500"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary">Guardar Producto</button>
+                            <button type="reset" class="btn-secondary">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="admin-card">
+                <div class="admin-card-header"><h3>Catálogo de Productos</h3></div>
+                <div class="admin-table-wrap">
+                    <table class="admin-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Precio</th>
+                                <th>Stock</th>
+                                <th>Stock Crítico</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="admin-products-list"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="../js/main.js"></script>
+</body>
+</html>

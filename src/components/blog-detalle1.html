@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertoHogar | Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="main-header">
+    <a href="../../index.html" class="logo-link"><img src="../../src/assets/logo.jpg" alt="Logo HuertoHogar" class="logo-img"> <span class="logo-text">HuertoHogar</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <a href="login.html" id="link-login">Ingresar</a>
+        <a href="registro.html" id="link-registro">Registro</a>
+        <div id="user-info" style="display:none;align-items:center;gap:1rem;">
+            <span id="user-name" style="font-weight:600;font-size:0.9rem;color:var(--accent-green);"></span>
+            <button id="btn-logout" style="background:none;border:1px solid #ccc;padding:0.4rem 1rem;border-radius:6px;cursor:pointer;font-size:0.85rem;font-weight:600;">Salir</button>
+        </div>
+        <a href="carrito.html" class="btn-cart">🛒 <span class="cart-badge" id="cart-count">0</span></a>
+    </div>
+</header>
+<main>
+<article class="blog-detail-section">
+    <span class="blog-tag">Nutrición</span>
+    <h2>5 Razones para Comer Más Verduras de Temporada</h2>
+    <p class="blog-meta" style="margin-bottom:1.5rem;">📅 15 de mayo, 2026 · Por equipo HuertoHogar</p>
+    <img src="../assets/blog1.jpg" alt="Canasta con verduras frescas del campo chileno">
+    <p>En HuertoHogar creemos que comer bien empieza por elegir bien. Y una de las mejores decisiones que puedes tomar es optar por verduras de temporada, cultivadas cerca de tu hogar.</p>
+    <p><strong>1. Son más nutritivas.</strong> Los nutrientes se degradan con el tiempo. Una zanahoria cosechada ayer tiene hasta un 45% más de vitaminas que una que lleva semanas en tránsito internacional.</p>
+    <p><strong>2. Son más económicas.</strong> Cuando un producto está en plena temporada, la oferta sube y el precio baja. Sin intermediarios como los nuestros, el ahorro es aún mayor.</p>
+    <p><strong>3. Apoyas al agricultor local.</strong> Cada compra de producto nacional genera empleo y mantiene viva la tradición agrícola chilena que data de siglos.</p>
+    <p><strong>4. Tienen mejor sabor.</strong> No hay química que reemplace el sabor de una manzana recién cosechada del Maule o un tomate que maduró bajo el sol de O'Higgins.</p>
+    <p><strong>5. Reduces tu huella de carbono.</strong> Menos kilómetros recorridos significa menos emisiones. Un producto local puede recorrer 50 km versus 12.000 km de un producto importado.</p>
+    <div style="margin-top:2rem;">
+        <a href="blog.html" class="btn-secondary">← Volver al Blog</a>
+        <a href="productos.html" class="btn-primary" style="margin-left:1rem;">Ver Productos</a>
+    </div>
+</article>
+</main>
+<footer class="main-footer">
+    <div class="footer-bottom"><p>&copy; 2026 HuertoHogar. Todos los derechos reservados.</p></div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

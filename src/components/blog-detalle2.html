@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertoHogar | Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="main-header">
+    <a href="../../index.html" class="logo-link"><img src="../../src/assets/logo.jpg" alt="Logo HuertoHogar" class="logo-img"> <span class="logo-text">HuertoHogar</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <a href="login.html" id="link-login">Ingresar</a>
+        <a href="registro.html" id="link-registro">Registro</a>
+        <div id="user-info" style="display:none;align-items:center;gap:1rem;">
+            <span id="user-name" style="font-weight:600;font-size:0.9rem;color:var(--accent-green);"></span>
+            <button id="btn-logout" style="background:none;border:1px solid #ccc;padding:0.4rem 1rem;border-radius:6px;cursor:pointer;font-size:0.85rem;font-weight:600;">Salir</button>
+        </div>
+        <a href="carrito.html" class="btn-cart">🛒 <span class="cart-badge" id="cart-count">0</span></a>
+    </div>
+</header>
+<main>
+<article class="blog-detail-section">
+    <span class="blog-tag">Sostenibilidad</span>
+    <h2>Cómo Reducir tu Huella de Carbono con tu Dieta</h2>
+    <p class="blog-meta" style="margin-bottom:1.5rem;">📅 28 de abril, 2026 · Por equipo HuertoHogar</p>
+    <img src="../assets/blog2.jpg" alt="Corazón formado con frutas y verduras coloridas">
+    <p>La alimentación representa entre el 20% y el 30% de la huella de carbono de un hogar promedio. La buena noticia: pequeños cambios tienen un impacto gigante.</p>
+    <p><strong>Compra local.</strong> Elegir productos cultivados en Chile en vez de importados reduce drásticamente las emisiones asociadas al transporte. En HuertoHogar, el 95% de nuestros productos recorre menos de 500 km hasta tu puerta.</p>
+    <p><strong>Elige productos de temporada.</strong> Los cultivos fuera de temporada requieren invernaderos con calefacción artificial o vuelos expresos. La lechuga de temporada puede tener una huella 10 veces menor que la de importación.</p>
+    <p><strong>Reduce el desperdicio.</strong> Un tercio de los alimentos producidos en el mundo se desperdicia. Planifica tus compras, congela lo que sobre y usa las cáscaras para hacer caldos o compost.</p>
+    <p><strong>Consume más plantas.</strong> No es necesario dejar de comer carne, pero reducir su consumo incluso un 20% puede marcar una diferencia real. Las legumbres chilenas como las lentejas y los porotos son una proteína con huella mínima.</p>
+    <p>En HuertoHogar estamos comprometidos con un modelo de distribución de bajo impacto. Trabajamos con rutas optimizadas y empaques biodegradables porque creemos que el futuro se construye con cada decisión de compra.</p>
+    <div style="margin-top:2rem;">
+        <a href="blog.html" class="btn-secondary">← Volver al Blog</a>
+        <a href="productos.html" class="btn-primary" style="margin-left:1rem;">Ver Productos</a>
+    </div>
+</article>
+</main>
+<footer class="main-footer">
+    <div class="footer-bottom"><p>&copy; 2026 HuertoHogar. Todos los derechos reservados.</p></div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

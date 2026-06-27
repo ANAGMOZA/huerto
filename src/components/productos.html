@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertoHogar | Productos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="main-header">
+    <a href="../../index.html" class="logo-link"><img src="../../src/assets/logo.jpg" alt="Logo HuertoHogar" class="logo-img"> <span class="logo-text">HuertoHogar</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html" class="active">Productos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <a href="login.html" id="link-login">Ingresar</a>
+        <a href="registro.html" id="link-registro">Registro</a>
+        <div id="user-info" style="display:none;align-items:center;gap:1rem;">
+            <span id="user-name" style="font-weight:600;font-size:0.9rem;color:var(--accent-green);"></span>
+            <button id="btn-logout" style="background:none;border:1px solid #ccc;padding:0.4rem 1rem;border-radius:6px;cursor:pointer;font-size:0.85rem;font-weight:600;">Salir</button>
+        </div>
+        <a href="carrito.html" class="btn-cart">🛒 <span class="cart-badge" id="cart-count">0</span></a>
+    </div>
+</header>
+
+<section class="page-hero">
+    <h2>Nuestra Cosecha</h2>
+    <p>Productos frescos seleccionados directamente de agricultores chilenos.</p>
+</section>
+
+<main class="products-section">
+    <div class="filters-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="frutas">Frutas</button>
+        <button class="filter-btn" data-filter="verduras">Verduras</button>
+        <button class="filter-btn" data-filter="organicos">Orgánicos</button>
+        <button class="filter-btn" data-filter="lacteos">Lácteos</button>
+    </div>
+    <div id="productos-page-container" class="product-grid"></div>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <div><img src="../../src/assets/logo.jpg" alt="Logo" style="height:36px;border-radius:50%;vertical-align:middle;margin-right:0.5rem;"><span class="logo-text" style="color:#fff;">HuertoHogar</span></div>
+            <p>Del campo a tu mesa, con amor.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Mi Cuenta</h4>
+            <ul>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+                <li><a href="carrito.html">Mi Carrito</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 HuertoHogar. Todos los derechos reservados.</p></div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

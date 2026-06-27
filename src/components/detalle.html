@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuertoHogar | Detalle Producto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="main-header">
+    <a href="../../index.html" class="logo-link"><img src="../../src/assets/logo.jpg" alt="Logo HuertoHogar" class="logo-img"> <span class="logo-text">HuertoHogar</span></a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="main-nav">
+        <ul>
+            <li><a href="../../index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html" class="active">Productos</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="header-actions">
+        <a href="login.html" id="link-login">Ingresar</a>
+        <a href="registro.html" id="link-registro">Registro</a>
+        <div id="user-info" style="display:none;align-items:center;gap:1rem;">
+            <span id="user-name" style="font-weight:600;font-size:0.9rem;color:var(--accent-green);"></span>
+            <button id="btn-logout" style="background:none;border:1px solid #ccc;padding:0.4rem 1rem;border-radius:6px;cursor:pointer;font-size:0.85rem;font-weight:600;">Salir</button>
+        </div>
+        <a href="carrito.html" class="btn-cart">🛒 <span class="cart-badge" id="cart-count">0</span></a>
+    </div>
+</header>
+
+<main class="detail-page">
+    <div id="detalle-container"></div>
+</main>
+
+<footer class="main-footer">
+    <div class="footer-bottom"><p>&copy; 2026 HuertoHogar. Todos los derechos reservados.</p></div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
