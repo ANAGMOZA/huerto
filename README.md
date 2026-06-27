@@ -13,7 +13,7 @@ Plataforma e-commerce que conecta familias chilenas con agricultores locales. Co
 3. Haz clic derecho en `index.html` → **Open with Live Server**
 4. O abre directamente `index.html` en tu navegador
 
-> ⚠️ Para que las imágenes carguen correctamente, siempre abrir desde Live Server o un servidor local, no desde `file://`.
+
 
 ---
 
@@ -21,15 +21,15 @@ Plataforma e-commerce que conecta familias chilenas con agricultores locales. Co
 
 ```
 HuertoHogar/
-├── index.html                  # Home de la tienda
+├── index.html                 
 ├── README.md
 ├── .gitignore
 └── src/
     ├── css/
-    │   └── styles.css          # Hoja de estilos única
+    │   └── styles.css          
     ├── js/
-    │   └── main.js             # Lógica completa del sistema
-    ├── assets/                 # Imágenes y logo
+    │   └── main.js            
+    ├── assets/                 
     │   ├── logo.jpg
     │   ├── campo.jpg
     │   ├── equipo.jpg
@@ -37,7 +37,7 @@ HuertoHogar/
     │   ├── agricultores.jpg
     │   ├── blog1.jpg / blog2.jpg
     │   └── [imágenes productos]
-    └── components/             # Todas las páginas HTML
+    └── components/            
         ├── login.html
         ├── registro.html
         ├── nosotros.html
@@ -115,6 +115,9 @@ Santiago · Puerto Montt · Villarrica · Nacimiento · Viña del Mar · Valpara
 ---
 
 ## 👥 Equipo
+
+- Angel Morales 
+- Freidy Jean Julien
 
 Proyecto desarrollado como parte de la Evaluación Parcial 1 — Taller de Desarrollo Web, INACAP 2026.
 

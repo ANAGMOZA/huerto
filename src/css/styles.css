@@ -868,3 +868,6 @@ a { text-decoration: none; color: inherit; }
 .logo-link { display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
 .logo-img { height: 42px; width: 42px; object-fit: cover; border-radius: 50%; border: 2px solid var(--accent-green); }
 .logo-link .logo-text { font-family: var(--font-heading); font-size: 1.5rem; color: var(--accent-green); font-weight: 700; }
+
+
+/**/
