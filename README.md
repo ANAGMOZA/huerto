@@ -121,3 +121,11 @@ Santiago · Puerto Montt · Villarrica · Nacimiento · Viña del Mar · Valpara
 
 Proyecto desarrollado como parte de la Evaluación Parcial 1 — Taller de Desarrollo Web, INACAP 2026.
 
+### Historial de contribuciones
+
+- Junio 2026: Ajustes de validación y mejoras responsive por Freidy Jean Julien.
+
+
+## 📌 Última actualización
+
+Repositorio actualizado con mejoras en estilos responsivos y validaciones JS.
