@@ -116,8 +116,8 @@ Santiago · Puerto Montt · Villarrica · Nacimiento · Viña del Mar · Valpara
 
 ## 👥 Equipo
 
-- Angel Morales 
-- Freidy Jean Julien
+- Angel Morales: Encargado de la Arquitectura base, Maquetacion HTML de todas las vistas solicitadas, prototipo inicial de estilos CSS.
+- Freidy Jean Julien: Encargado del Control de Calidad, Refactorizacion de código, Corrección de estilos responsivos y Desarrollo/Validación completa de la lógica de negocio en JavaScript.
 
 Proyecto desarrollado como parte de la Evaluación Parcial 1 — Taller de Desarrollo Web, INACAP 2026.
 
